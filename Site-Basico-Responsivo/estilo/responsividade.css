@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+main {
+    min-width: 240px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .pequena {
+    /* max width = quer dizer que a imagem não vai crescer mais que 350px */
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    /* para centralizar eu tenho que coloca display (block) e margin (auto) */
+}
