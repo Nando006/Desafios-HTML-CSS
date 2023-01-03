@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../imagens/bg7.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+header {
+    box-shadow: 3px 1px 20px rgba(0, 0, 0, 0.487);
+    background-color: rgba(0, 0, 0, 0.713);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header h1 {
+    padding: 20px 0px 10px 0px;
+}
+
+header p {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 350px) {
+    header h1 {
+        font-size: 1.7em;
+    }
+
+    header p {
+        font-size: 0.90em;
+    }
+}
+
+main {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.576);
+}
+
+main form div.grupo {
+    padding: 30px 0px 5px 0px;
+    margin: auto;
+    max-width: 80%;
+}
+
+main form div.grupo label {
+    text-indent: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main form div.grupo p {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-indent: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+main form div.grupo input.texto,
+main form div.grupo input.numero,
+main form div.grupo select.lista {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.307);
+    color: rgb(59, 59, 59);
+    border-color: white;
+    border-radius: 8px;
+    height: 35px;
+    text-indent: 10px;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    outline: 0;
+    transition: 0.5s ease-in-out;
+}
+
+main form div.grupo select#lista1 {
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
+
+main form div.grupo select#lista2 {
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
+
+main form div.grupo label {
+    display: flex;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+main form div.grupo input.marcador {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    cursor: pointer;
+}
+
+main form div.grupo input.check {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    cursor: pointer;
+}
+
+main form div.grupo #comentario {
+    border-radius: 20px;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+    min-height: 120px;
+    width: 90%;
+    padding: 0.60rem;
+    letter-spacing: 0.1em;
+    resize: vertical;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+main form div.grupo .confirmar {
+    background-color: rgba(255, 255, 0, 0.342);
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.548);
+    font-size: 1.5em;
+    border-color: rgba(255, 255, 0, 0.409);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+main form div#butao {
+    padding-bottom: 40px;
+}
+
+/* Focus = Para quando selecionado o efeito acontecer
+valid = Para deixar o efeito ativado mesmo saindo */
+main form div.grupo input.texto:focus,
+main form div.grupo input.texto:valid {
+    color: rgb(59, 59, 59);
+    border-color: yellow;
+}
+
+div.grupo input.numero:focus,
+div.grupo input.numero:valid {
+    color: rgb(59, 59, 59);
+    border-color: yellow;
+}
+
+div.grupo select.lista:focus,
+div.grupo select.lista:valid {
+    color: rgb(59, 59, 59);
+    border-color: yellow;
+}
+
+div.grupo .confirmar:hover {
+    background-color: rgba(255, 255, 0, 0.537);
+}
+
+div.grupo .confirmar:checked {
+    background-color: yellow;
+}
+
+@media (max-width: 450px) {
+    main form div.grupo input.texto,
+    main form div.grupo input.numero,
+    main form div.grupo select.lista {
+        font-size: 1em;
+    }
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Preencha o Formulário</h1>
+        <p>Não aceitaremos formulários preenchidos incorretamente!</p>       
+    </header>
+    <main>
+        <form id="formulario">
+            <div class="grupo">
+                <label for="nome">Nome</label>
+                <input required type="text" name="nome" id="nome" class="texto" placeholder="Digite seu nome">            
+            </div>
+            <div class="grupo">
+                <label for="email">Email</label>
+                <!-- required = Isto é não pode deixar vazio, se deixar ele volta com o efeito de borda -->
+                <input required type="email" name="email" id="email" class="texto" placeholder="Digite seu Email ou Gmail">
+            </div>
+            <div class="grupo">
+                <label for="idade">Idade (opcional)</label>
+                <input required type="number" name="idade" id="idade" class="numero" placeholder="Digite sua idade">
+            </div>
+            <div class="grupo">
+                <p>Qual sua situação atual?</p>
+                <select required name="lista" id="lista1" class="lista">
+                    <option disabled selected value>Clique para selecionar</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bom">Bom</option>
+                    <option value="ruim">Ruim</option>
+                    <option value="muito-ruim">Muito ruim</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <p>Recomendaria esse formulário para alguem?</p>
+                <label for="sim">
+                    <input type="radio" name="sim" id="sim" class="marcador" checked>
+                    Sim
+                </label>
+                <label for="nao">
+                    <input type="radio" name="nao" id="nao" class="marcador">
+                    Não
+                </label>
+                <label for="talvez">
+                    <input type="radio" name="talvez" id="talvez" class="marcador">
+                    Talvez
+                </label>
+            </div>
+            <div class="grupo">
+                <p>Qual dessas linguagens você acha mais interessante?</p>
+                <select required name="lista2" id="lista2" class="lista">
+                    <option disabled selected value>Clique para selecionar</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="typescript">TypeScript</option>
+                    <option value="c#">C#</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <p>Marque todas as linguagens que está estudando ou pretende!</p>
+                <label for="js">
+                    <input type="checkbox" name="js" id="js" class="check">
+                    JavaScript
+                </label>
+                <label for="python">
+                    <input type="checkbox" name="python" id="python" class="check">
+                    Python
+                </label>
+                <label for="c#">
+                    <input type="checkbox" name="c#" id="c#" class="check">
+                    C#
+                </label>
+                <label for="c++">
+                    <input type="checkbox" name="c++" id="c++" class="check">
+                    C++
+                </label>
+                <label for="php">
+                    <input type="checkbox" name="php" id="php" class="check">
+                    Php
+                </label>
+                <label for="swift">
+                    <input type="checkbox" name="swift" id="swift" class="check">
+                    Swift
+                </label>
+                <label for="java">
+                    <input type="checkbox" name="java" id="java" class="check">
+                    Java
+                </label>
+                <label for="sql">
+                    <input type="checkbox" name="sql" id="sql" class="check">
+                    SQL
+                </label>
+                <label for="ruby">
+                    <input type="checkbox" name="ruby" id="ruby" class="check">
+                    Ruby
+                </label>
+            </div>
+            <div class="grupo">
+                <p>Nos dê sujestões em comentarios?</p>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escreva sua sujestão aqui..."></textarea>
+            </div>
+            <div class="grupo"  id="butao">
+                <input type="button" value="Enviar" class="confirmar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
