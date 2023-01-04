@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: black url(bg.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            top: 0px;
+            width: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.872);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.338);
+            padding: 10px;
+        }
+        header > h1 {
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            top: 0px;
+            left: 2.5%;
+            box-shadow: inset 0px 0px 20px black;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.872);
+            margin: 65px 10px 5px 10px;
+            max-width: 250px;
+            padding: 5px;
+        }
+        nav > ul {
+            display: flex;
+            list-style: none;
+        }
+        nav > ul > li > a {
+            color: white;
+            padding: 5px;
+            margin: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgb(18, 18, 18);
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.745);
+            transition-duration: 0.5s;
+        }
+        nav > ul > li > a:hover {
+            background-color: rgba(245, 116, 116, 0.476);
+        }
+
+        img#sherly {
+            position: fixed;
+            max-width:300px;
+            left: 3%;
+            bottom: 5%;
+            border-radius: 20px;
+            box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.348);
+            max-height: 400px;
+            transition: 1s;
+        }
+
+        @media (max-width: 1280px),
+        (max-height: 540px) {
+            img#sherly {
+                display: none;
+            }
+        }
+        
+        main {
+            line-height: 2em;
+            letter-spacing: 1px;
+            text-align: justify;
+            text-indent: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.549);
+            border-radius: 10px 40px;
+            margin: 110px auto 30px auto;
+            background-color: white;
+            max-width: 600px;
+        }
+
+        main p {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faça Acontecer</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <picture>
+        <a href="https://www.google.com/search?q=sheryl+sandberg&bih=617&biw=1366&hl=pt-BR&sxsrf=ALiCzsa_IqrFoq15UL9P3SUaFbMQqRhffg%3A1672854447907&source=hp&ei=r7u1Y9TbNJLT1sQPrv2BmAw&iflsig=AJiK0e8AAAAAY7XJv1ds0rDin_sPaHPFNQMaolWQvkRd&oq=Sherly+s&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCCMQsQIQJzIKCC4QgAQQsQMQCjIHCAAQgAQQCjIHCC4QgAQQCjIHCAAQgAQQCjIHCAAQgAQQCjIHCC4QgAQQCjIHCAAQgAQQCjIHCAAQgAQQCjIHCAAQgAQQCjoHCCMQ6gIQJzoECCMQJzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggIABCxAxCDAToQCC4QsQMQgwEQxwEQ0QMQQzoTCC4QsQMQgwEQxwEQ0QMQ1AIQQzoECAAQQzoLCC4QgAQQxwEQrwE6CAgAEIAEELEDOg4IABCABBCxAxCDARDJAzoLCC4QgAQQsQMQ1AI6DgguEIAEELEDEIMBENQCOgUIABCABDoNCC4QgAQQsQMQ1AIQCjoICC4Q1AIQgAQ6BQguEIAEOgsILhCABBDHARDRAzoNCC4QgAQQsQMQgwEQCjoNCC4QgwEQ1AIQsQMQQzoLCC4QgAQQsQMQgwE6CAguELEDEIAEOgQILhBDOggILhCxAxCDAVDtBFjrHWDKJGgCcAB4AIABuQGIAb0JkgEDMC44mAEAoAEBsAEK&sclient=gws-wiz" target="_blank" rel="external"><abbr title="Sherly Sandberg"><img id="sherly" src="imagens/sherlysandberg.jpg" alt="Sherly Sandberg"></abbr></a>
+    </picture>
+    <main>
+        <p>As mulheres compõem hoje grande parte da força de trabalho no mundo. Mas ainda são os homens que dominam os cargos de liderança. Dos 195 países independentes no mundo, apenas dezessete são governados por mulheres. A porcentagem feminina em papéis de liderança é ainda menor no mundo empresarial. Isso significa que, quando se trata de tomar as decisões mais importantes para todos, a voz das mulheres não tem o mesmo peso. Neste livro absolutamente inspirador, Sheryl Sandberg investiga as razões de o crescimento das mulheres na carreira estar há tantos anos estagnado, identificando a raiz do problema e oferecendo soluções práticas e sensatas para que elas atinjam todo o seu potencial. Eleita uma das dez mulheres mais poderosas do mundo pela revista Forbes, Sheryl encoraja as mulheres a sonharem alto, assumirem riscos e se lançarem em busca de seus objetivos sem medo. Ela acredita que um maior número de mulheres na liderança levará a um tratamento mais justo de todas as mulheres. A executiva faz uma autorreflexão sincera sobre os acertos e os erros de sua carreira, que, unidos a uma pesquisa vasta, resultaram neste livro escrito com humor e sabedoria. Faça acontecer é um manifesto feminino para homens e mulheres, fundamental para se pensar os impasses e as questões de gênero no mundo do trabalho. A edição brasileira inclui dados específicos da situação das mulheres no nosso país e conta com um prefácio da empresária Luiza Helena Trajano, presidente do Magazine Luiza. “As palavras de Sheryl vão ajudar todos os leitores - especialmente os homens - a se tornarem líderes melhores e mais efetivos.” - Mark Zuckerberg, fundador e CEO do Facebook “Faça acontecer propõe uma série de desafios ambiciosos. [...] Espero que as mulheres - e os homens - da minha geração leiam esse livro para nos ajudar a construir a vida que desejamos e o mundo em que queremos viver.” - Chelsea Clinton</p>
+    </main>
+</body>
+</html>
