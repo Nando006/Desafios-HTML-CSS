@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: rgb(35, 38, 50);
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 3px 0px 10px black;
+    top: 0px;
+}
+
+header h1 {
+    font-variant: small-caps;
+    padding-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+}
+
+header a, footer a {
+    margin-left: 2px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+header a:hover, footer a:hover {
+    color: rgba(255, 255, 255, 0.286);
+    text-decoration: underline;
+}
+
+main section {
+    min-height: 320px;
+    text-align: center;
+}
+
+main section h2, main section h3 {
+    padding: 20px;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+
+main section.imagem h2, main section.imagem h3 {
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 20px;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.512);
+}
+
+main section p {
+    border-radius: 20px;
+    width: 80vh;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    text-indent: 20px;
+    text-align: justify;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.613);
+}
+
+main section.normal {
+    background-image: linear-gradient(45deg, rgba(22, 15, 12, 0.626), rgba(0, 0, 0, 0.616), rgba(22, 15, 12, 0.748));
+    color: white;
+}
+
+main section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0)
+}
+
+main section#img1 {
+    background-image: url(../imagens/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main section#img2 {
+    background-image: url(../imagens/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main section#img3 {
+    background-image: url(../imagens/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main section#img4 {
+    background-image: url(../imagens/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.405);
+    text-align: center;
+}
