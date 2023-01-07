@@ -5,3 +5,4 @@
 - <a href="https://nando006.github.io/Desafios/Site-Basico-Responsivo/android.html" target="_blank" rel="external"><strong>Site Basico Responsivo</strong></a>
 - <a href="https://nando006.github.io/Desafios/Position-Fixed/index.html" target="_blank" rel="external"><strong>Position Fixed</strong></a>
 - <a href="https://nando006.github.io/Desafios/Parallax/parallax.html" target="_blank" rel="external"><strong>Efeito Parallax</strong></a>
+- <a href="https://nando006.github.io/Desafios/Parallax-2/parallax.html" target="_blank" rel="external"><strong>Efeito Parallax 2</strong></a>
