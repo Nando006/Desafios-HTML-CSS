@@ -16,7 +16,7 @@ body {
 }
 
 div {
-    background-color:rgba(4, 53, 53, 0.546);
+    background-color:rgba(4, 53, 53, 0);
     height: 100%;
 }
 
@@ -24,22 +24,35 @@ header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.455);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(121, 50, 50, 0.692);
     height: 100px;
 }
 
 header h1 {
+    color: rgb(255, 196, 196);
     padding: 20px;
     font-variant: small-caps;
+    text-shadow: 0px 0px 2px black;
+}
+
+header p {
+    border-radius: 10px;
+    padding: 1px;
+    margin: auto;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.749);
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.482);
 }
 
 article {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.407);
     border-radius: 20px;
     margin: 50px auto 10px auto;
-    background-color: rgba(0, 0, 0, 0.887);
+    background-color: rgb(109, 64, 64);
     width: 80vw;
-    color: white;
+    color: rgb(253, 253, 253);
 }
 
 main article section {
@@ -48,12 +61,14 @@ main article section {
 }
 
 article h2 {
+    color: rgb(255, 196, 196);
     padding: 0px 0px 10px 0px;
+    text-shadow: 0px 0px 2px black;
 }
 
 article p {
     text-shadow: 0px 0px 2px black;
-    color: rgb(170, 176, 183);
+    color: rgb(242, 242, 242);
     text-indent: 20px;
     letter-spacing: 2.5px;
     font-size: 1.1em;
@@ -66,10 +81,11 @@ aside {
     letter-spacing: 3px;
     padding: 10px;
     border-radius: 20px;
-    background-color: rgba(67, 41, 41, 0.797);
+    background-color: rgba(0, 0, 0, 0.665);
     margin: 30px auto 0px auto;
     font-size: 1.5em;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.234);
+    max-width: 250px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.438);
 }
 
 a {
@@ -85,7 +101,11 @@ a:hover {
 }
 
 ul {
-    background-color:rgba(0, 0, 0, 0.746);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 75vw;
+    background-color:rgba(1, 1, 1, 0.918);
     font-variant: small-caps;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -94,8 +114,16 @@ ul {
 }
 
 ul li {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    background-color: rgba(109, 64, 64);
     padding: 10px 15px 10px 15px;
     display: inline-block;
+}
+
+ul li#liespecial {
+    margin-right: 10px;
+    border-radius: 5px; 
 }
 
 iframe { 
@@ -110,12 +138,14 @@ iframe {
 
 footer {
     color: white;
-    background-color: black;
+    background-color: rgb(109, 64, 64);
     padding: 10px;
 }
 
 footer p {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.426);
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0px 0px 10px rgba(32, 15, 15, 0.241);
     font-variant: small-caps;
     font-weight: bold;
     text-align: center;
@@ -134,6 +164,15 @@ footer p {
     }
     iframe {
         width: 93.5vw;
+    }
+}
+
+@media(max-width: 475px) {
+    ul {
+        max-width: 95vw;
+    }
+    ul li {
+        margin-top: 5px;
     }
 }
 
