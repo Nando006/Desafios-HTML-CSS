@@ -24,7 +24,7 @@ header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.455);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.494);
+    background-color: rgba(0, 0, 0, 0.692);
     height: 100px;
 }
 
@@ -43,7 +43,8 @@ article {
 }
 
 main article section {
-    padding: 50px;
+    margin: 2vw;
+    padding: 50px 0px;
 }
 
 article h2 {
@@ -93,7 +94,7 @@ ul {
 }
 
 ul li {
-    padding: 10px 30px 10px 30px;
+    padding: 10px 15px 10px 15px;
     display: inline-block;
 }
 
@@ -118,4 +119,20 @@ footer p {
     font-variant: small-caps;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6em;
+        padding: 10px;
+    }
+    main article {
+        width: 93.5vw;
+    }
+    article p {
+        font-size: 1em;
+    }
+    iframe {
+        width: 93.5vw;
+    }
 }
