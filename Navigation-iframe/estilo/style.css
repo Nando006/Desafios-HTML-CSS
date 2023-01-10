@@ -124,7 +124,7 @@ footer p {
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.6em;
-        padding: 10px;
+        padding: 20px 0px 20px 0px;
     }
     main article {
         width: 93.5vw;
@@ -134,5 +134,14 @@ footer p {
     }
     iframe {
         width: 93.5vw;
+    }
+}
+
+@media (max-width: 410px) {
+    header {
+        padding: 15px;
+    }
+    header h1 {
+        padding: 20px 0px 10px 0px;
     }
 }
