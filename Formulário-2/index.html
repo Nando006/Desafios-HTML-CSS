@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="estilo/style.css">
+        <title>Siga Seu Sonho</title>
+    </head>
+    <body>
+        <div id="fundo">
+            <header>
+                <img src="imagens/capa.png" alt="Seu Sonho">
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_self" rel="next">Home</a></li>
+                    <li><a href="#" target="_self" rel="next">Quem somos</a></li>
+                    <li><a href="#" target="_self" rel="next">Contato</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <h1>Preencha o Formulário</h1>
+                    <p>Atenção ao preencher o formulário, pois desconsideraremos formulários com dados incorretos!</p>
+                </section>
+                <form action="" method="post" autocompete="on">
+                    <fieldset>
+                        <div class="normal">
+                            <label for="inome">Digite seu nome</label>
+                            <input type="text" name="nome" id="inome" autocomplete="text" minlength="3" required>
+                        </div>
+                        <div class="normal">
+                            <label for="iidade">Digite sua idade</label>
+                            <input type="date" name="idade" id="iidade" required autocomplete="date">
+                        </div>
+                        <div class="normal">
+                            <label for="cel">Digite seu número de celular</label>
+                            <input type="tel" name="tel" id="cel" autocomplete="tel" placeholder="(62)998754321" pattern="^\(\d{2}\)\d{1}\d{4,5}-\d{4}$" required>
+                        </div>
+                        <div id="genero">
+                            <p>Escolha seu gênero</p>
+                            <input type="radio" name="sexo" id="masc">
+                            <label for="masc">Masculino</label><br>
+                            <input type="radio" name="sexo" id="femi">
+                            <label for="femi">Feminino</label><br>
+                            <input type="radio" name="sexo" id="anonimo" checked>
+                            <label for="anonimo">Prefiro não dizer</label>
+                        </div>
+                        <div class="normal">
+                            <label for="estado-civil">Selecione seu estado civil</label>
+                            <select name="estado" id="estado-civil" required>
+                                <option value="" selected>Escolha uma das opções</option>
+                                <option value="solteiro">Solteiro(a)</option>
+                                <option value="namorando">Namorando(a)</option>
+                                <option value="casado">Casado(a)</option>
+                            </select> 
+                        </div>
+                        <div>
+                            <label for="iemprego">Empregado ou Desempregado?</label>
+                            <select name="emprego" id="iemprego" required>
+                                <option value="" selected>Escolha uma das opções</option>
+                                <optgroup label="Empregado">
+                                    <option value="recente">Empregado recentemente</option>
+                                    <option value="6meses">Empregado a mais de 6 meses</option>
+                                    <option value="1ano">Empregado a mais de 1 ano</option>
+                                    <option value="5anos">Empregado a mais de 5 anos</option>
+                                    <option value="10anos">Empregado a mais de 10 anos</option>
+                                </optgroup>
+                                <optgroup label="Desempregado">
+                                    <option value="drecente">Desempregado recentemente</option>
+                                    <option value="d6meses">Desempregado a mais de 6 meses</option>
+                                    <option value="d1ano">Desempregado a mais de 1 ano</option>
+                                </optgroup>
+                                <optgroup label="Outros">
+                                    <option value="empreendedor">Sou empreendedor</option>
+                                    <option value="investidor">Sou investidor</option>
+                                    <option value="nuncatrabalhou">Nunca Trabalhei</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="comentario">Nós dê sua sugestão de como melhoraro esse formulário</label>
+                            <textarea name="sujestao" id="comentario" cols="30" rows="10" placeholder="Sua mensagem aqui..." style="resize:none"></textarea>
+                        </div>
+                        <div id="buttons">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p>Gostou deste formulário? Acesse meu <a href="#" target="_blank" rel="external">GitHub</a></p>
+        </footer>
+    </body>
+</html>
